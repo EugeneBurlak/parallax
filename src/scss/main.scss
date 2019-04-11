@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background:#edeff4;
+}
+.parallax{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    &-layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &__1{
+        background-image: url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/eugeneburlak/background.jpg);
+        background-size: cover;
+        }
+        &__2{
+        background-image: url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/eugeneburlak/layer-1.png);
+        }
+        &__3{
+        background-image: url(https://raw.githubusercontent.com/EugeneBurlak/assets/master/eugeneburlak/layer-2.png);
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One');
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper{
+    background-color: #343434;
+}
+
+.scroll-parallax{
+    overflow: hidden;
+}
+
+.text{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Bowlby One', cursive;
+  position: relative;
+  min-height: 100vh;
+}
+
+.text-inner{
+  top: 50%;
+  left: 50%;
+  line-height: 1em;
+  width: 100%;
+  padding: 130px 20px;
+}
+
+.text-inner a{
+  color: #29cccc;
+}
+
+.text-inner div{
+  font-size: 34px;
+  padding: 20px 0;
+}
+
+.text-inner div:last-child{
+  font-size: 24px;
+}

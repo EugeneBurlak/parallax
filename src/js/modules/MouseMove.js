@@ -2,7 +2,7 @@ class Parallax{
 
     constructor(options = {}){
         this.nameSpaces = {
-            wrapper: options.wrapper || '.parallax',
+            wrapper: options.wrapper || '.mousemove-parallax',
             layers: options.layers || '.parallax-layer',
             deep: options.deep || 'data-parallax-deep'
         };

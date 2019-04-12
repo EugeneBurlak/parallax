@@ -1,7 +1,9 @@
 import {MouseMove, Scroll} from './js/';
 
 window.addEventListener('load', function(){
-    new MouseMove();
+    new MouseMove({
+        wrapper: '.mousemove-parallax'
+    });
     new Scroll({
         container: '.scroll-parallax',
         styles: {

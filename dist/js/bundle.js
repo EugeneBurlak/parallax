@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -77,11 +77,13 @@ module.exports = __webpack_require__(2);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js___ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js___ = __webpack_require__(2);
 
 
 window.addEventListener('load', function () {
-    new __WEBPACK_IMPORTED_MODULE_0__js___["a" /* MouseMove */]();
+    new __WEBPACK_IMPORTED_MODULE_0__js___["a" /* MouseMove */]({
+        wrapper: '.mousemove-parallax'
+    });
     new __WEBPACK_IMPORTED_MODULE_0__js___["b" /* Scroll */]({
         container: '.scroll-parallax',
         styles: {
@@ -152,17 +154,11 @@ window.addEventListener('load', function () {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MouseMove__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Scroll__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MouseMove__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Scroll__ = __webpack_require__(4);
 
 
 const MouseMove = __WEBPACK_IMPORTED_MODULE_0__modules_MouseMove__["a" /* default */];
@@ -173,7 +169,7 @@ const Scroll = __WEBPACK_IMPORTED_MODULE_1__modules_Scroll__["a" /* default */];
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +177,7 @@ class Parallax {
 
     constructor(options = {}) {
         this.nameSpaces = {
-            wrapper: options.wrapper || '.parallax',
+            wrapper: options.wrapper || '.mousemove-parallax',
             layers: options.layers || '.parallax-layer',
             deep: options.deep || 'data-parallax-deep'
         };
@@ -212,7 +208,7 @@ class Parallax {
 /* harmony default export */ __webpack_exports__["a"] = (Parallax);
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -285,6 +281,12 @@ class Scroll {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Scroll);
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
